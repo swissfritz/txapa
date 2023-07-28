@@ -1,0 +1,76 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import '@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/* special taxoil */
+
+
+.alertcss {
+    --backdrop-opacity: 0.6 !important;
+    --background: white;
+}
+.alertcss .alert-title {
+    color: black !important;
+    font-size: 20px;
+    font-weight: 800;
+}
+.alertcss .alert-sub-title {
+    color: black !important;
+    font-size: 18px;
+    font-weight: 600;
+}
+.alertcss .alert-message {
+    color: black !important;
+    font-size: 16px;
+}
+
+.customButtoncss {
+    color: black !important;
+}
+
+/* Textarea, ion-input */
+.tex {
+    --background: white !important;
+    color:black;
+}
+
+/* white bg, black foreground */
+.bow {
+    --background: white !important;
+    color: black !important;
+    font-size: medium;
+}
+
+.contx {
+    --background: black !important;
+    --color: white !important;
+}
+
+.tbtx {
+    --background: black !important;
+    color: white !important;
+}
+

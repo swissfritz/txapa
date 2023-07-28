@@ -1,0 +1,133 @@
+<ion-header>
+  <ion-toolbar class="tbtx">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Übernächste Woche</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contx ion-padding">
+  <ion-radio-group [(ngModel)]="mo">
+    <ion-grid>
+    <ion-label class="title">
+      Montag
+    </ion-label>
+    <ion-row>
+      <ion-col>
+          <ion-radio justify="fixed" value="MOfrüh">früh</ion-radio>
+      </ion-col>
+      <ion-col>
+          <ion-radio justify="fixed" value="MOspät">spät</ion-radio>
+      </ion-col>
+      <ion-col>
+          <ion-radio justify="fixed" value="MO24h">24h</ion-radio>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+  </ion-radio-group><ion-radio-group [(ngModel)]="di">
+    <ion-grid>
+    <ion-label class="title">
+      Dienstag
+    </ion-label>
+    <ion-row>
+      <ion-col>
+          <ion-radio justify="fixed" value="DIfrüh">früh</ion-radio>
+      </ion-col>
+      <ion-col>
+          <ion-radio justify="fixed" value="DIspät">spät</ion-radio>
+      </ion-col>
+      <ion-col>
+          <ion-radio justify="fixed" value="DI24h">24h</ion-radio>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+  </ion-radio-group><ion-radio-group [(ngModel)]="mi">
+    <ion-grid>
+    <ion-label class="title">
+      Mittwoch
+    </ion-label>
+    <ion-row>
+      <ion-col>
+          <ion-radio justify="fixed" value="MIfrüh">früh</ion-radio>
+      </ion-col>
+      <ion-col>
+          <ion-radio justify="fixed" value="MIspät">spät</ion-radio>
+      </ion-col>
+      <ion-col>
+          <ion-radio justify="fixed" value="MI24h">24h</ion-radio>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+  </ion-radio-group><ion-radio-group [(ngModel)]="do">
+    <ion-grid>
+    <ion-label class="title">
+      Donnerstag
+    </ion-label>
+    <ion-row>
+      <ion-col>
+          <ion-radio justify="fixed" value="DOfrüh">früh</ion-radio>
+      </ion-col>
+      <ion-col>
+          <ion-radio justify="fixed" value="DOspät">spät</ion-radio>
+      </ion-col>
+      <ion-col>
+          <ion-radio justify="fixed" value="DO24h">24h</ion-radio>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+  </ion-radio-group><ion-radio-group [(ngModel)]="fr">
+    <ion-grid>
+    <ion-label class="title">
+     Freitag
+    </ion-label>
+    <ion-row>
+      <ion-col>
+          <ion-radio justify="fixed" value="FRfrüh">früh</ion-radio>
+      </ion-col>
+      <ion-col>
+          <ion-radio justify="fixed" value="FRspät">spät</ion-radio>
+      </ion-col>
+      <ion-col>
+          <ion-radio justify="fixed" value="FR24h">24h</ion-radio>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+  </ion-radio-group><ion-radio-group [(ngModel)]="sa">
+    <ion-grid>
+    <ion-label class="title">
+      Samstag
+    </ion-label>
+    <ion-row>
+      <ion-col>
+          <ion-radio justify="fixed" value="SAfrüh">früh</ion-radio>
+      </ion-col>
+      <ion-col>
+          <ion-radio justify="fixed" value="SAspät">spät</ion-radio>
+      </ion-col>
+      <ion-col>
+          <ion-radio justify="fixed" value="SA24h">24h</ion-radio>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+  </ion-radio-group><ion-radio-group [(ngModel)]="so">
+    <ion-grid>
+    <ion-label class="title">
+      Sonntag
+    </ion-label>
+    <ion-row>
+      <ion-col>
+          <ion-radio justify="fixed" value="SOfrüh">früh</ion-radio>
+      </ion-col>
+      <ion-col>
+          <ion-radio justify="fixed" value="SOspät">spät</ion-radio>
+      </ion-col>
+      <ion-col>
+          <ion-radio justify="fixed" value="SO24h">24h</ion-radio>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+  </ion-radio-group>
+
+    <ion-button color="light" (click)="sendMail()">Absenden</ion-button>
+</ion-content>

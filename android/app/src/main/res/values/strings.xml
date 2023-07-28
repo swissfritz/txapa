@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Taxoil</string>
+    <string name="title_activity_main">Taxoil</string>
+    <string name="package_name">at.taxoil.app111111</string>
+    <string name="custom_url_scheme">at.taxoil.app111111</string>
+</resources>

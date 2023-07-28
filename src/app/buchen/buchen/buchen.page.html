@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar class="tbtx">
+    <ion-buttons slot="start">
+      <ion-menu-button autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Fahrzeug buchen</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="contx ion-padding">
+  <p>Wenn Sie Ihr Fahrzeug für die nächste oder die nächste und die übernächste
+    Woche buchen möchten, können Sie dies hier tun.</p>
+
+  <form [formGroup]="buchenForm" (ngSubmit)="onSubmit()" #form="ngForm">
+
+      <ion-input class="tex" formControlName="names" type="text"
+        label="Name" placeholder="Name + Vorname"></ion-input><br><br>
+
+    <ion-item lines="none">
+      <ion-toggle class="bggr" slot="start" color="light" formControlName="sameCar"
+      type="toggle" checked="false">Gleiches Auto???</ion-toggle>
+    </ion-item> <br><br><br>
+
+    <ion-button type="submit" expand="block" color="light" [disabled]="!buchenForm.controls.names.valid">
+      Weiter
+    </ion-button>
+
+    <ion-item
+      *ngIf="!buchenForm.controls.names.valid || form.submitted && !buchenForm.controls.names.valid">
+        <p class="error-message">Bitte Ihren Namen und Vornamen eingeben</p>
+    </ion-item>
+  </form>
+</ion-content>

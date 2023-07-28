@@ -1,0 +1,7 @@
+{
+  "name": "at.taxoil.app111111",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

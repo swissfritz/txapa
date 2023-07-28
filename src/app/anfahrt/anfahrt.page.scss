@@ -1,0 +1,30 @@
+:root {
+  --ion-background-color: transparent;
+}
+
+html {
+  background-color: transparent;
+}
+
+ion-content {
+  --ion-background-color: transparent;
+}
+
+#starti {    
+  background-color: black;
+}
+
+#container {
+  background-color: transparent;
+}
+
+#endi {
+  background-color: black;
+  height: 400px;
+}
+
+capacitor-google-map {
+  display: inline-block;
+  width:100%;
+  height: 275px;
+}
